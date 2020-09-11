@@ -1,12 +1,12 @@
 :root{
 
-    --maincolor:#2c3131;
-    --secondarycolor:#2c3131;
+    --maincolor:#383e56;
+    --secondarycolor:#3d4258;
     --bordercolor:#c1c1c1;
-    --mainText:rgb(255, 245, 245);
+    --mainText:rgb(0, 0, 0);
     --secondaryText:#4b5156;
     --themedotborder:#24292E;
-    --previewShadow: #df3106;
-    --previewbackground:rgb(12, 8, 8);
+    --shadow: #eb8242;
+    --previewbackground:white;
     --buttoncolor : black;
 }

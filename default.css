@@ -1,14 +1,17 @@
 :root{
 
-        --maincolor:#047adb;
-        --secondarycolor:rgb(179, 42, 42);
+        --maincolor:#eaeaea;
+        --secondarycolor:14px 14px 12px #f7f7f7, 
+        -14px -14px 12px #ffffff;
         --bordercolor:#c1c1c1;
-        --mainText:black;
+        --mainText:#353431;
         --secondaryText:#4b5156;
-        --themedotborder:#24292E;
-        --shadow: #f0ead6;
+        --themedotborder:black;
+        --shadow: #e9dcb0;
         --previewbackground:rgb(251, 249, 243, 0.8);
         --buttoncolor : black;
+        --input-field : inset 8px 8px 38px #ededed, 
+            inset -8px -8px 38px #ffffff;
 }
 
 html,body{
@@ -16,9 +19,12 @@ html,body{
     margin: 0;
 }
 
+body *{
+    transition: 0.3s;
+}
 h1,h2,h3,h4,h5,h6,strong{
     color:var(--mainText);
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Russo One', sans-serif ;
     font-weight: 400;
 
 }
@@ -42,7 +48,7 @@ h6 { font-size: 16px;}
 
 a{
     text-decoration: none;
-    color:rgb(0, 54, 134);
+    color:#17a2b8
 }
 
 ul{
@@ -176,7 +182,7 @@ background-color: #FC6058
     text-align: center;
 }
 #shadow{
-	background-color: var(--previewShadow);
+	background-color: var(--shadow);
 	border-radius: 50% 20% / 10% 40%;
 	width: 300px;
 	height: 180px;
@@ -194,7 +200,7 @@ background-color: #FC6058
 #skills{
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--previewShadow);
+    background-color: var(--shadow);
 }
 #github-img{
     width: 100%;
@@ -231,7 +237,6 @@ margin: 0;
     display: block;
     max-width: 600px;
     margin: 0 auto;
-    border: 1px solid var(--bordercolor);
     padding: 15px;
     border-radius: 9px;
     background-color: var(--secondarycolor);
@@ -244,7 +249,8 @@ margin: 0;
 	padding-bottom: 10px;
 	background-color: var(--secondarycolor);
 	border-radius: 9px;
-	border: none;
+    border: none;
+    box-shadow: var(--input-field);
     font-size: 14px;
 
 }
@@ -270,7 +276,12 @@ line-height: 2.7em;
 min-height: 100px;
 font-size: 14px;        
 }
-.theme-dots{
+#theme-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.tough{
     height: 30px;
     width: 30px;
     margin: 5px;
@@ -282,6 +293,11 @@ font-size: 14px;
     cursor: pointer;
     border: 2px solid var(--themedotborder);
     }
+.tough:hover{
+        
+        border-width:5px;
+    }
+
 
 .about-wrap{
         display: grid;
