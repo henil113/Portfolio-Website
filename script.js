@@ -2,7 +2,7 @@ console.log('dd')
  let theme = localStorage.getItem('theme')
 
  if (theme == null){
-     settheme('dark')
+     settheme('light')
  }
  else{
      settheme(theme)

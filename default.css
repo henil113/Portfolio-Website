@@ -1,4 +1,5 @@
-:root{--maincolor:#eaeaea;
+:root{
+    --maincolor:#eaeaea;
     --secondarycolor:14px 14px 12px #f7f7f7, 
     -14px -14px 12px #ffffff;
     --bordercolor:#c1c1c1;
@@ -11,7 +12,6 @@
     --input-field : inset 8px 8px 38px #ededed, 
         inset -8px -8px 38px #ffffff;
 
-    
 }
 
 html,body{
