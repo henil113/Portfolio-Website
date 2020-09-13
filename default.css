@@ -48,6 +48,7 @@ h6 { font-size: 16px;}
 
 a{
     text-decoration: none;
+    font-family: 'Roboto Mono', monospace;;
     color:#17a2b8
 }
 
@@ -171,11 +172,9 @@ background-color: #FC6058
     background-color: #fff;
 }
 #med-mode{
-    background-color: #fa8072;
+    background-color: #4a536b;
 }
-#dark-mode{
-    background-color:   #8f00f8;
-}
+
 #note{
     font-size: 12px;
     font-style: italic;

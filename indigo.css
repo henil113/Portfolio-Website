@@ -1,11 +1,11 @@
 :root{
-    --maincolor:#383e56;
-    --secondarycolor:#3d4258;
+    --maincolor:#4a536b;
+    --secondarycolor:#60758d;
     --bordercolor:#c1c1c1;
     --mainText:rgb(0, 0, 0);
     --secondaryText:#4b5156;
     --themedotborder:#24292E;
-    --shadow: #eb8242;
+    --shadow: #ff8a8d;
     --previewbackground:white;
     --buttoncolor : black;
     
