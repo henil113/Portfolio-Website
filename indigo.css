@@ -1,12 +1,14 @@
 :root{
-    --maincolor:#4a536b;
-    --secondarycolor:#60758d;
+    --maincolor:#4b878bff;
+    --secondarycolor:#4b878bff;
     --bordercolor:#c1c1c1;
     --mainText:rgb(0, 0, 0);
     --secondaryText:#4b5156;
     --themedotborder:#24292E;
-    --shadow: #ff8a8d;
+    --shadow: rgb(187, 37, 40);
     --previewbackground:white;
     --buttoncolor : black;
+    --input-field : inset 8px 8px 38px  rgb(0, 127, 136), 
+    inset -8px -8px 38px rgb(0, 127, 136);
     
 }
