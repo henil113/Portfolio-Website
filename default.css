@@ -4,6 +4,8 @@
     -14px -14px 12px #ffffff;
     --bordercolor:#c1c1c1;
     --mainText:#353431;
+    --secondshadow:14px 14px 12px #f7f7f7, 
+             -14px -14px 12px #ffffff;
     --secondaryText:#4b5156;
     --themedotborder:black;
     --shadow: #e9dcb0;
@@ -66,8 +68,6 @@ ul{
     width:1200px;
     margin : 0 auto;
 }
-
-
 .hello-wrapper{
     display: grid;
     text-align: center;
@@ -235,6 +235,7 @@ margin: 0;
 #ContactForm{
     display: block;
     max-width: 600px;
+    box-shadow: var(--secondshadow);
     margin: 0 auto;
     padding: 15px;
     border-radius: 9px;
@@ -296,6 +297,7 @@ font-size: 14px;
         
         border-width:5px;
     }
+
 .about-wrap{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
