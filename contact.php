@@ -11,7 +11,7 @@ if(isset($_POST['submit'])) {
     $msg = "Name: ".$name."\n"."Subject: ".$subject."\n"."Wrote Following: "."\n\n".$message;
     $headers = "From: ".$email
 
-    if(mail($to,$subject,$message,$headers)){
+    if(mail($to,$subject,$msg,$headers)){
         echo"<h1> Sent SUccesfully! </h1>";
     }
     else{
