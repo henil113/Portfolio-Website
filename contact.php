@@ -1,14 +1,16 @@
 <?php
 if(isset($_POST['email'])) {
  
-    $email_from = "henilparikh113@gmail.com";
-    $email_to = "parik11n@uwindsor.ca";
-    $email_subject = "Inquiry";
+   
  
     $name = $_POST['name']; 
     $subject = $_POST['subject']; 
     $email = $_POST['email'];     
     $message = $_POST['message'];
+
+    $email_from = .$email;
+    $email_to = "parik11n@uwindsor.ca";
+    $email_subject = "Inquiry";
     
     $email_message = "Form details below.\n\n";
     $email_message .= "Name:".$name."\n";
