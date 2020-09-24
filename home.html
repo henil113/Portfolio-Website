@@ -140,7 +140,8 @@
             <div class ="main-con">
                 <h3 style="text-align:center;">Get in Contact </h3>
 
-                <form action=”mailto:contact@yourdomain.com” method=”POST” enctype=”multipart/form-data”>                    <a name ="ContactForm"></a>
+                <form id="ContactForm" action = 'contact.php' method="POST">
+                    <a name ="ContactForm"></a>
                     <label>Name</label>
 				<input class="input-field" type="text" name="name">
 
@@ -153,7 +154,7 @@
 				<label>Message</label>
 				<textarea class="input-field" name="message"></textarea>
                    
-                <input id ='btnsubmit' name = 'btnsubmit' type='submit' value="submit">
+                <input id ='btnsubmit' name = 'submit' type='submit' value="submit">
                 </form>
             </div>
         </section>
