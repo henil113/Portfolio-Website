@@ -20,7 +20,11 @@ if(isset($_POST['submit'])) {
 
     //echo $email_message;
     
-    mail($email_to,$email_subject,$email_message,"From:".$email_from);
+    if(mail($email_to,$email_subject,$email_message,"From:".$email_from)){
+      echo "Message sent";
+    } else {
+      echo "Not sent";
+    }
     echo "<script>
             alert('Mail Sent');
             window.location.href='home.html';
