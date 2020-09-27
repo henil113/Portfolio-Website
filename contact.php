@@ -1,26 +1,27 @@
 <?php
-// Check for empty fields
-if(empty($_POST['name'])      ||
-   empty($_POST['subject'])     ||
-   empty($_POST['email'])     ||
-   empty($_POST['message'])   ||
-   !filter_var($_POST['submit'],FILTER_VALIDATE_EMAIL))
-   {
-   echo "No arguments Provided!";
-   return false;
-   }
-   
-$name = strip_tags(htmlspecialchars($_POST['name']));
-$email_subject = strip_tags(htmlspecialchars($_POST['subject']));
-$email_address = strip_tags(htmlspecialchars($_POST['email']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
-   
-// Create the email and send the message
-$to = 'parik11n@uwindsor.ca'; // Add your email address in between the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nSubject: $email_subject\n\nMessage:\n$message";
-$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";   
-mail($to,$email_subject,$email_body,$headers);
-return true;         
+if(isset($_POST['email'])) {
+ 
+  $email_from = "henilparikh113@gmail.com";
+  $email_to = "parik11n@uwindsor.ca";
+  $email_subject = "Inquiry";
+ 
+    $name = $_POST['name']; 
+    $subject = $_POST['subject']; 
+    $email = $_POST['email'];     
+    $message = $_POST['message'];
+    
+    $email_message = "Form details below.\n\n";
+    $email_message .= "Name:".$name."\n";
+    $email_message .= "Subject: ".$subject."\n";
+    $email_message .= "Email: ".$email."\n";
+    $email_message .= "Message: ".$message."\n";
+
+    //echo $email_message;
+    
+    if(mail($email_to,$email_subject,$email_message,"From:".$email_from)){
+    echo "<script>
+            alert('Mail Sent');
+            window.location.href='home.html';
+          </script>";
+}
 ?>
