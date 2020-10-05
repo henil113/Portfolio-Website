@@ -19,9 +19,10 @@ if(isset($_POST['btnsubmit'])) {
     //echo $email_message;
     
     if(mail($email_to,$email_subject,$email_message,"From:".$email_from)){
-    echo "<script>
-            alert('Mail Sent');
-            window.location.href='home.html';
-          </script>";
+    echo "<script>";
+    echo "  alert(\'Mail Sent\');";
+    echo "  window.location.href='home.html';";
+    echo "</script>";
+	} 
 }
 ?>
